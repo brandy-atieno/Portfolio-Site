@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #4caf50;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+  align-items: center;
+}
+
+header .logo {
+  width: 80px;
+  border-radius: 50px;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding-top: 50px;
+  margin-top: 2px;
+
+  a {
+    color: #333;
+  }
+}
+
+.tool-container,
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tool,
+.project {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.tool:hover,
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tool-container > .tool,
+.project-container > .project {
+  animation: fadeIn 1s ease forwards;
+}
+
+.tool:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.tool:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.tool:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.tool:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.project:nth-child(1) {
+  animation-delay: 1s;
+}
+.project:nth-child(2) {
+  animation-delay: 1.2s;
+}
+.project:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+#contact {
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: #4caf50;
+  }
+}
