@@ -48,9 +48,7 @@ a:hover {
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
-   a {
-    color: #333;
-  }
+  
 }
 
 
@@ -72,6 +70,18 @@ a:hover {
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+.tool a, .project a {
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.tool a:hover, .project a:hover {
+  color: #388e3c;
+}
+
 
 .tool img, .project img {
   width: 100px;
