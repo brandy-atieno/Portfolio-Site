@@ -99,20 +99,23 @@ a:hover {
 .contact-container a:hover {
   color: #388e3c;
 }
-
-.social-media {
-  display: flex;
-  gap: 1rem;
-}
-
 .social-media a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
   color: #333;
   font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
 .social-media a:hover {
   color: #4caf50;
+}
+
+.social-media a img {
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 768px) {
