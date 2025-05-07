@@ -209,6 +209,11 @@ a:hover {
   header {
     height: 10vh;
   }
+ nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
 
   .tool-container,
   .project-container {
