@@ -48,7 +48,14 @@ a:hover {
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+   a {
+    color: #333;
+  }
 }
+
+
+
+
 
 .tool-container, .project-container {
   display: grid;
